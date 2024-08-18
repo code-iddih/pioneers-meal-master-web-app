@@ -1,0 +1,126 @@
+.meal-plan-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  align-items: center; 
+}
+
+.calendar-container {
+  margin-bottom: 20px;
+}
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%; 
+  max-width: 600px; 
+}
+
+.note-container textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  resize: vertical; 
+}
+
+.note-container h3 {
+  color: #ff6600;
+}
+
+.note-container button {
+  align-self: center; 
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0; 
+}
+
+.note-container button:hover {
+  background-color: #000;
+}
+
+.saved-notes-container {
+  width: 90%; 
+  max-width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: #ff6600;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  position: relative; 
+  align-self: center; 
+}
+
+.meal-plan-container h1 {
+  color: white;
+}
+
+.saved-notes-container h3 {
+  color: black;
+}
+
+.saved-notes-container p {
+  color: black;
+}
+
+.saved-note {
+  margin-bottom: 20px;
+}
+
+.saved-note h4 {
+  margin: 0;
+}
+
+.saved-note p {
+  margin: 5px 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .meal-plan-container {
+    padding: 15px; 
+  }
+
+  .note-container button {
+    padding: 8px 16px;
+  }
+
+  .saved-notes-container {
+    width: 85%; 
+    padding: 10px; 
+  }
+
+  .calendar-container {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meal-plan-container {
+    padding: 10px; 
+  }
+
+  .note-container textarea {
+    height: 80px; 
+  }
+
+  .note-container button {
+    padding: 8px 14px; 
+  }
+
+  .saved-notes-container {
+    width: 95%; 
+    padding: 10px;
+    margin-top: 20px; 
+  }
+}
